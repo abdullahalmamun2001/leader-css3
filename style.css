@@ -65,6 +65,7 @@
 }
 .main-tools{
     position: absolute;
+    margin-left: 30px;
 }
 hr{
     margin: 10px 60px;
@@ -135,8 +136,8 @@ hr{
 /* featured place style */
 
 .featured-place{
-    display: flex;
-    justify-content: space-between; 
+    /* display: flex;
+    justify-content: space-between;  */
     margin: 70px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -166,21 +167,110 @@ hr{
 
 /* footer style start  */
 
-.footer{
+
+footer{
     background-color: rgb(35, 32, 32);
     height: 30vh;
+    width: 100%;
+}
+.footer{
+    /* background-color: rgb(35, 32, 32); */
+    /* height: 30vh;
+    /* height: 30vh;
+    width: 100%; */
 
     color: beige;
     text-align: center;
     margin-top: 30px;
 }
-.footer .footer-heading{
+/* .footer .footer-heading{
     
-    padding-top: 50px;
+    /* padding-top: 50px; */
     
-}
+} */
 .footer .footer-details{
     font-size: 13px;
 }
 
+@media screen and (max-width:576px) {
+    /* navbar start  */
 
+    .logo{
+        font-size: 10px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: end;
+        position: absolute;
+        float: right;
+
+        }
+    .navbar li{
+        margin: 3px;
+        justify-content: right;
+    }
+    .navbar li a{
+        padding: 5px;
+        font-size: 10px;
+        justify-content: right;
+    }
+
+
+    /* journey media queries start  */
+   .journey-tools{
+        position: center;
+   }
+   .journy-word{
+        margin:10px 50px;
+   }
+   .journy-word h1{
+        font-size: 23px;
+   }
+   .journy-word p{
+    font-size: 12px;
+   }
+    .journey{
+        flex-direction: column;
+       margin-right: 100px;
+        
+    } 
+    .journey-tools .main-tools img{
+        margin-top: 20px;
+        height: 300px;
+        width: 300px;
+    }
+    .btn{
+        padding:3px 10px;
+    }
+
+    /* brand section media query stle  */
+
+    .brands{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 12px 60px;
+    }
+
+    /* .collection-contents section start */
+
+    .collection-contents{
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+        /* grid-gap: 20px;
+        margin: 30px 60px; */
+    }
+    .content {
+       padding: auto;
+    }
+    .content .main-image{
+        
+        width: 350px;
+    }
+
+    .featured-place{
+       grid-template-columns:repeat(1, 1fr);
+    }
+
+
+}
